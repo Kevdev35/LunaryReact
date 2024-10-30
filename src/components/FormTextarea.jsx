@@ -9,7 +9,7 @@ function FormTextarea({ label, className = '', ...props }) {
       <textarea
         {...props}
         rows="4"
-        className="w-full bg-black/30 border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-blue-500 transition-colors resize-vertical"
+        className="w-full bg-black/30 border border-gray-700 rounded-lg px-4 py-2.5 text-white focus:outline-none focus:border-[#a1000a] transition-colors "
       />
     </div>
   );

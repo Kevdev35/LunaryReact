@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #101010;
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 41%, rgba(161,0,10,1) 70%, rgba(0,0,0,1) 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Poppins", serif;
+
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Swiper custom styles */
+.game-carousel {
+  padding: 50px 60px !important;
+  overflow-y: visible !important;
+  position: relative;
+}
+
+.game-carousel .swiper-slide {
+  transition: all 0.3s ease;
+}
+
+.game-carousel .swiper-slide-active {
+  transform: scale(1.05);
+}
+
+.game-carousel .swiper-button-next,
+.game-carousel .swiper-button-prev {
+  color: white;
+  background: #A1000A ;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  transform: translateY(-50%);
+}
+
+/* Position the buttons outside */
+.game-carousel .swiper-button-prev {
+  left: 0;
+}
+
+.game-carousel .swiper-button-next {
+  right: 0;
+}
+
+.game-carousel .swiper-button-next:hover,
+.game-carousel .swiper-button-prev:hover {
+  background: #7d0109 ;
+
+}
+
+.game-carousel .swiper-button-next::after,
+.game-carousel .swiper-button-prev::after {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.game-carousel .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.game-carousel .swiper-pagination-bullet-active {
+  background: #A1000A ;
+  width: 30px;
+  border-radius: 5px;
+}
+
+/* MORADO #582D7D */
+/* ROJO #A1000A */
